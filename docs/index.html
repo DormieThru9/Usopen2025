@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2025 U.S. Open Golf Pool</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🏌️ U.S. Open Pool Leaderboard – Oakmont 2025</h1>
+  </header>
+
+  <section id="entry-form">
+    <h2>Submit Your Entry</h2>
+    <form id="poolForm">
+      <label>Name: <input type="text" name="name" required /></label><br/>
+      <label>Category 1: <select name="cat1"></select></label><br/>
+      <label>Category 2: <select name="cat2"></select></label><br/>
+      <label>Category 3: <select name="cat3"></select></label><br/>
+      <label>Category 4: <select name="cat4"></select></label><br/>
+      <label>Category 5: <select name="cat5"></select></label><br/>
+      <label>Tiebreaker Score (e.g., -6): <input type="text" name="tiebreaker" /></label><br/>
+      <button type="submit">Submit Entry</button>
+    </form>
+  </section>
+
+  <section id="leaderboard">
+    <h2>Leaderboard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Total $</th>
+          <th>To Par</th>
+          <th>OWGR</th>
+          <th>Roster</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard-body"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
