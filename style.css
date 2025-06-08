@@ -1,52 +1,54 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: "Georgia", serif;
+  background: #ffffff;
   color: #003300;
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
 }
-
 header {
   background-color: #006400;
   color: white;
-  padding: 10px;
+  padding: 1em;
   text-align: center;
 }
-
-h2 {
-  margin-top: 20px;
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 1em;
 }
-
-form label {
+label {
   display: block;
-  margin: 10px 0;
+  margin-top: 1em;
 }
-
-table {
+select, input {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  padding: 0.5em;
+  margin-top: 0.2em;
 }
-
-thead {
+button {
   background-color: #006400;
   color: white;
+  padding: 0.7em;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
 }
-
-td, th {
+table {
+  width: 90%;
+  margin: 2em auto;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 0.7em;
   border: 1px solid #ccc;
-  padding: 8px;
   text-align: center;
 }
-
-.red {
+.under-par {
   color: red;
 }
-
-.green {
+.even-par {
   color: green;
 }
-
-.black {
+.over-par {
   color: black;
 }
