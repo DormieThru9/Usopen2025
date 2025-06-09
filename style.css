@@ -1,54 +1,49 @@
 body {
-  font-family: "Georgia", serif;
-  background: #ffffff;
-  color: #003300;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000;
   margin: 0;
   padding: 0;
 }
+
 header {
-  background-color: #006400;
-  color: white;
-  padding: 1em;
+  background-color: #004d00;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
+
 form {
-  max-width: 600px;
-  margin: auto;
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
-label {
-  display: block;
-  margin-top: 1em;
+
+select, input, button {
+  padding: 8px;
+  font-size: 1em;
 }
-select, input {
-  width: 100%;
-  padding: 0.5em;
-  margin-top: 0.2em;
-}
-button {
-  background-color: #006400;
-  color: white;
-  padding: 0.7em;
-  border: none;
-  cursor: pointer;
-  margin-top: 1em;
-}
+
 table {
   width: 90%;
-  margin: 2em auto;
+  margin: 20px auto;
   border-collapse: collapse;
 }
+
 th, td {
-  padding: 0.7em;
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
+  padding: 10px;
   text-align: center;
 }
-.under-par {
-  color: red;
+
+thead {
+  background-color: #004d00;
+  color: white;
 }
-.even-par {
-  color: green;
-}
-.over-par {
-  color: black;
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
