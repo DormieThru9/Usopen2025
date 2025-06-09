@@ -14,32 +14,49 @@
   <section class="form-section">
     <h2>Submit Your Entry</h2>
     <form id="poolForm">
-      <label>Category 1 – Top 10 OWGR
-        <select required>
-          <option value="">-- Select a Golfer --</option>
+      <label>Category 1:
+        <select name="category1">
           <option>Scottie Scheffler</option>
           <option>Rory McIlroy</option>
           <option>Xander Schauffele</option>
-          <!-- Add the rest... -->
-        </select>
-      </label>
-
-      <label>Category 2 – Former U.S. Open Champions
-        <select required>
-          <option value="">-- Select a Golfer --</option>
-          <option>Matt Fitzpatrick</option>
-          <option>Brooks Koepka</option>
-          <option>Jon Rahm</option>
           <!-- Add more -->
         </select>
       </label>
-
-      <!-- Repeat for Category 3, 4, 5 -->
-
-      <label>Tiebreaker – Winning Score (e.g., -7)
-        <input type="text" name="tiebreaker" required />
+      <label>Category 2:
+        <select name="category2">
+          <option>Brooks Koepka</option>
+          <option>Jon Rahm</option>
+          <option>Matt Fitzpatrick</option>
+          <!-- Add more -->
+        </select>
       </label>
-
+      <label>Category 3:
+        <select name="category3">
+          <option>Tommy Fleetwood</option>
+          <option>Shane Lowry</option>
+          <option>Viktor Hovland</option>
+          <!-- Add more -->
+        </select>
+      </label>
+      <label>Category 4:
+        <select name="category4">
+          <option>Patrick Cantlay</option>
+          <option>Jordan Spieth</option>
+          <option>Sam Burns</option>
+          <!-- Add more -->
+        </select>
+      </label>
+      <label>Category 5:
+        <select name="category5">
+          <option>Tony Finau</option>
+          <option>Keegan Bradley</option>
+          <option>Max Homa</option>
+          <!-- Add more -->
+        </select>
+      </label>
+      <label>Tiebreaker (Champion score to par):
+        <input type="text" name="tiebreaker" placeholder="-6">
+      </label>
       <button type="submit">Submit</button>
     </form>
   </section>
@@ -51,18 +68,17 @@
         <tr>
           <th>Team</th>
           <th>Prize Money</th>
-          <th>Total Score</th>
+          <th>Score to Par</th>
           <th>OWGR Avg</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Team Example</td>
-          <td>$4,250,000</td>
-          <td><span class="under-par">-5</span></td>
-          <td>22.3</td>
+          <td>$2,300,000</td>
+          <td style="color: red;">-5</td>
+          <td>21</td>
         </tr>
-        <!-- More teams here -->
       </tbody>
     </table>
   </section>
